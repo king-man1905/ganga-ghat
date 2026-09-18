@@ -1,5 +1,5 @@
 import { CALL_NUMBERS, telLink, WA_MESSAGES, waLink } from "../lib/contact";
-import { IconMapPin, IconPhone, IconWhatsApp } from "./icons";
+import { IconInstagram, IconMapPin, IconPhone, IconWhatsApp } from "./icons";
 import LogoMark from "./Logo";
 
 const LINKS = [
@@ -45,6 +45,16 @@ export default function Footer() {
           >
             <IconWhatsApp className="h-4 w-4 shrink-0 text-forest" />
             WhatsApp: {CALL_NUMBERS[1]}
+          </a>
+          <a
+            href="https://www.instagram.com/gaya_jii_pind_daan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram – Gaya Ji Pind Daan"
+            className="mt-2 flex items-center gap-2 font-body text-sm text-ink/80 hover:text-maroon"
+          >
+            <IconInstagram className="h-4 w-4 shrink-0 text-forest" />
+            Instagram: @gaya_jii_pind_daan
           </a>
           {CALL_NUMBERS.map((n) => (
             <a
